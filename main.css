@@ -145,7 +145,8 @@ a {
   margin-left: 2.5rem;
   list-style-type: none;
   float: left;
-  visibility: hidden;
+  visibility: visible;
+  line-height: 2rem;
 }
 
 .hero-text ul li:nth-of-type(3) {
@@ -218,9 +219,28 @@ a {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 760px) {
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 110px;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 800px) {
   .hero-text ul li {
-    visibility: visible;
+    visibility: hidden;
+  }
+  
+  .btn {
+    visibility: hidden;
+    transition: none;
   }
 
   .info-container {
