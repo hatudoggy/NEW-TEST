@@ -227,20 +227,75 @@ a {
   margin-right: 2.5rem;
   cursor: pointer;
   display: none;
+  visibility: hidden;
 }
 
 #check{
   display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 800px) {
-  .hero-text ul li {
-    visibility: hidden;
+  .hero-text ul{
+    position: fixed;
+    width: 50%;
+    height: 16rem;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3.5px solid #9e60fc;
+    border-radius: 2rem;
+    margin-right: 7px;
+    top: 90px;
+    right: -100%;
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    font-size: 17px;
+    transition: all 0.5s;
   }
   
+
+  #check:checked ~ ul{
+    right: 0;
+  }
+
+  .hero-text ul li{
+    margin-left: 0rem;
+    display: grid;
+    place-items: center;
+  }
+  
+  .hero-text ul li:nth-child(3){
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    display: grid;
+    place-items: center;
+  }
+
+  a {
+    color: rgb(255, 255, 255);    
+  }
+
+  a:hover{
+    color:#b689fa;
+  }
+
   .btn {
-    visibility: hidden;
+    visibility: visible;
     transition: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.1rem 0.5rem;
+    color:#9e60fc;
+  }
+  
+  .btn:hover {
+    color: rgb(231, 231, 231);
+  }
+
+  .checkbtn{
+    display: block;
+    visibility: visible;
   }
 
   .info-container {
