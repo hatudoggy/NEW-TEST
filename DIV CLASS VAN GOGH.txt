@@ -1,0 +1,19 @@
+      <div class="parallax__group info-container">
+        <img src="./img/concert.jpg" alt="Lively and colourful concert" />
+        <div class="text-container">
+          <h2>This is your year.</h2>
+          <p>What would life be if we had no courage to attempt anything?</p>
+          <p>- Vincent Van Gogh</p>
+          <a href="#" class="btn">Get Started Now</a>
+        </div>
+      </div>
+
+      <div class="parallax__group info-container">
+        <img src="./img/concert.jpg" alt="Lively and colourful concert" />
+        <div class="text-container">
+          <h2>This is your year.</h2>
+          <p>What would life be if we had no courage to attempt anything?</p>
+          <p>- Vincent Van Gogh</p>
+          <a href="#" class="btn">Get Started Now</a>
+        </div>
+      </div>
