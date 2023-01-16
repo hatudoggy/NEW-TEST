@@ -106,14 +106,9 @@ a {
   background: url('images/treescapeEdit.png') no-repeat center;
   top: 10px;
   background-size: cover;
-  transform: translateZ(0) scale(1);
+  transform: translateY(1px) translateZ(0) scale(1);
+  width: 102%;
   z-index: 9;
-}
-
-@media (max-width: 500px) {
-  .treescape{
-    
-  }
 }
 
 
@@ -274,6 +269,7 @@ a {
   position: relative;
   overflow: hidden;
   padding: 20px;
+  padding-bottom: 60px;
   background: rgb(0, 0, 0);
 }
 
@@ -286,9 +282,12 @@ a {
 }
 
 .product-container {
+  width: 100%; /* set a fixed width */
+  overflow-x: scroll; /* change to scroll */
+  overflow-y: hidden; /* hide the y-axis scrollbar */
+  white-space: nowrap; /* prevent line wrapping */
   padding: 0 10vw;
   display: flex;
-  overflow-x: auto;
   scroll-behavior: smooth;
   background: rgb(0, 0, 0);
 }
