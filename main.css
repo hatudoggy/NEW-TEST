@@ -221,9 +221,10 @@ a {
   position: relative;
   overflow: hidden;
   padding-top: 5rem;
-  padding-bottom: 9rem;
+  padding-bottom: 5vh;
   background: rgb(0, 0, 0);
   display: block;
+  margin-top: -1px;
 }
 
 .about-image{
@@ -280,11 +281,41 @@ a {
   display: none;
   visibility: hidden;
 }
+
+@media (max-width: 800px){
+  .info-container{
+    display: block;
+  }
+  .info-container img{
+    width: 70%;
+    height: auto;
+  }
+  .about-image{
+    float: none;
+    margin-left: 16vw;
+    
+  }
+  .text-container{
+    padding: 10vw;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 5vw;
+  }
+  
+  .text-container p:nth-of-type(2) {
+    font-size: 6vw;
+  }
+  
+}
+
+.content{
+  background-color: black;
+}
+/*
 @media (max-width: 1440px){
 
-  .about{
-    height: 180%;
-  }
+
   
   .about-image{
     position: fixed;
@@ -340,7 +371,8 @@ a {
     margin-left: 2.5rem;
   }
 }
-
+*/
+/*
 @media (max-width: 1200px){
 
   .info-container h2 {
@@ -368,6 +400,7 @@ a {
     margin-bottom: 1rem;
   }
 }
+*/
 
 @media (max-width: 800px) {
   .hero-text ul{
@@ -432,36 +465,6 @@ a {
     visibility: visible;
   }
 
-  .parallax__group, .info-container{
-    margin-right: -5rem;
-    padding: 0;
-  }
-
-  .about-image{
-    position: fixed;
-    left: 0%;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0;
-  }
-
-  .info-container img{
-    width: 100%;
-  }
-
-  .text-container {
-    margin-top: 75%;
-  }
-
-  .text-container p:nth-of-type(1) {
-    font-family: "Montserrat", sans-serif;
-    opacity: 90%;
-    font-size: 1rem;
-  }
-
-  .text-container p:nth-of-type(1) {
-    font-size: 1.1rem;
-  }
 }
 
 
