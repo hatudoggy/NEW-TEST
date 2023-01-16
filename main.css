@@ -38,6 +38,18 @@ a {
   background: #8151ca;
 }
 
+.btn-2 {
+  border: 1.5px solid #8151ca;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-2:hover {
+  color: #000;
+  background: #8151ca;
+}
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -50,6 +62,12 @@ a {
   height: 100vh;
   width: 100vw;
   transform-style: preserve-3d;
+}
+
+.parallax__group.info-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
 }
 
 .parallax__layer {
@@ -196,22 +214,47 @@ a {
   margin-right: 0.25rem;
 }
 
+.about {
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+  background: rgb(0, 0, 0);
+  display: block;
+}
+
+.about-image{
+  float: left;
+  margin-left: 100px;
+  margin-right: 30px;
+}
+
 .info-container img {
-  width: 75%;
-  margin-bottom: 2.5rem;
+  width: 40rem;
   filter: saturate(1);
   background-color: #000;
 }
 
-.info-container h2,
 .info-container p {
+  margin-bottom: 1rem;
+  background-color: #000;
+  text-justify: inter-word;
+}
+
+.info-container h2 {
   margin-bottom: 1rem;
   background-color: #000;
 }
 
+.text-container{
+  position: static;
+}
+
 .text-container p:nth-of-type(1) {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  width: 97%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .text-container p:nth-of-type(2) {
@@ -233,6 +276,94 @@ a {
 #check{
   display: none;
   visibility: hidden;
+}
+@media (max-width: 1440px){
+
+  .about{
+    height: 180%;
+  }
+  
+  .about-image{
+    position: fixed;
+    left: 25%;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .info-container img{
+    width: 50%;
+  }
+
+  .info-container p {
+    margin-bottom: 0.7rem;
+    background-color: #000;
+  }
+
+  .text-container {
+    margin-top: 43%;
+    margin-bottom: 50%;
+  }
+  
+  .info-container h2 {
+    padding-left: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    background-color: #000;
+  }
+
+  .text-container p:nth-of-type(1) {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    font-family: "Montserrat", sans-serif;
+    opacity: 90%;
+    font-size: 1.3rem;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .text-container p:nth-of-type(2) {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-2 {
+    border: 1.5px solid #8151ca;
+    border-radius: 0.75rem;
+    padding: 0.45rem 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px){
+
+  .info-container h2 {
+    padding-left: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    background-color: #000;
+  }
+
+  .text-container p:nth-of-type(1) {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    font-family: "Montserrat", sans-serif;
+    opacity: 90%;
+    font-size: 1.1rem;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .text-container p:nth-of-type(2) {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -298,28 +429,31 @@ a {
     visibility: visible;
   }
 
-  .info-container {
-    display: grid;
-    margin-top: -1vw;
-    margin-bottom: -8vw;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
-    align-items: center;
-    text-align: left;
-    background:rgb(0, 0, 0)
+  .parallax__group, .info-container{
+    margin-right: -5rem;
+    padding: 0;
   }
 
-  .info-container img {
-    justify-self: end;
-    width: 75%;
+  .about-image{
+    position: fixed;
+    left: 0%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+  }
+
+  .info-container img{
+    width: 100%;
+  }
+
+  .text-container {
+    margin-top: 75%;
   }
 
   .text-container p:nth-of-type(1) {
     font-family: "Montserrat", sans-serif;
     opacity: 90%;
     font-size: 1rem;
-    width: 80%;
-    margin: 1rem 0;
   }
 
   .text-container p:nth-of-type(1) {
