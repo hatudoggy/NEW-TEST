@@ -6,7 +6,7 @@
         sWrapper    = s.find('.slider-wrapper'),
         sItem       = s.find('.slide'),
         btn         = s.find('.slider-link'),
-        sWidth      = sItem.width(),
+        sWidth      = sItem.outerWidth(),
         sCount      = sItem.length,
         slide_date  = s.find('.slide-date'),
         slide_title = s.find('.slide-title'),
@@ -14,9 +14,15 @@
         slide_more  = s.find('.slide-more'),
         slide_image = s.find('.slide-image img'),
         sTotalWidth = sCount * sWidth;
+
+        $(window).on('resize', function(){
+          sWidth = sItem.innerWidth()
+        });
     
-    sWrapper.css('width', sTotalWidth);
-    sWrapper.css('width', sTotalWidth);
+    
+    //sWrapper.css('width', sTotalWidth);
+    
+      sWrapper.css('width', sTotalWidth);
     
     var clickCount  = 0;
     

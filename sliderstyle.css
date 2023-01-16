@@ -9,6 +9,11 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
 }
+
+.characters{
+    position:relative;
+    background-color: black;
+}
 .flex {
     display: -webkit-flex;
     display: flex;
@@ -115,9 +120,11 @@ div.overlay-blue:hover {
     text-decoration: none;
     color: transparent;
 }
+@media (min-width: 760px) {
 .arrow:hover {
     border-color: #8e0acb;
     border-width: 0.25vw;
+}
 }
 .arrow:before {
     display: block;
@@ -135,4 +142,62 @@ div.overlay-blue:hover {
 .arrow.next {
     transform: rotate(135deg);
     right: 0;
+}
+
+@media (max-width: 760px) {
+    .characters{
+        padding-top: 50px;
+    }
+    .slider-wrapper{
+        margin-left: 3vw;
+        
+    }
+    .slider-wrapper div{
+        margin-left: 0;
+        display: block;
+        
+        
+    }
+
+    .slide-content{
+        width: 80vw;
+        line-height: normal;
+    }
+
+    .slide-content div{
+        line-height: normal;
+        text-align: center;
+    }
+
+    .slide-date ,.slide-title{
+        padding-left: 10vw;
+    }
+
+    .slide-image{
+        height: auto;
+        padding-left: 28vw;
+    }
+
+    .slide-image img{
+        width: 35vw;
+    }
+
+    .slide-more{
+        font-size: 4vw;
+        padding-left: 18vw;
+    }
+
+    .arrows{
+        width: 21.5vw;
+        margin-left: 39vw;;
+        margin-top: 0;
+    }
+
+    .arrow{
+        width: 4vw;
+        height: 4vw;
+        border-top: 1vw solid #fff;
+        border-left: 1vw solid #fff;
+    }
+
 }
